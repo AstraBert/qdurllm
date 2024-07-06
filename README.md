@@ -5,14 +5,14 @@
 <div align="center">
     <img src="https://img.shields.io/github/languages/top/AstraBert/qdurllm" alt="GitHub top language">
    <img src="https://img.shields.io/github/commit-activity/t/AstraBert/qdurllm" alt="GitHub commit activity">
-   <img src="https://img.shields.io/badge/qdurllm-stable-green" alt="Static Badge">
+   <img src="https://img.shields.io/badge/Status-stable-green" alt="Static Badge">
    <img src="https://img.shields.io/badge/Release-v0.0.0-purple" alt="Static Badge">
    <img src="https://img.shields.io/docker/image-size/astrabert/local-search-application
    " alt="Docker image size">
    <img src="https://img.shields.io/badge/Supported_platforms-Windows/macOS/Linux-brown" alt="Static Badge">
    <div>
         <img src="./imgs/qdurllm.png" alt="Flowchart" align="center">
-        <p><i>Flowchart for everything-ai</i></p>
+        <p><i>Flowchart for qdurllm</i></p>
    </div>
 </div>
 
