@@ -1,5 +1,5 @@
 docker buildx build \
---label org.opencontainers.image.title=astrabert/local-search-application\
+--label org.opencontainers.image.title=astrabert/local-search-application \
 --label org.opencontainers.image.description='Local Search engine container' \
 --label org.opencontainers.image.url=https://github.com/AstraBert/qdurllm \
 --label org.opencontainers.image.source=https://github.com/AstraBert/qdurllm \

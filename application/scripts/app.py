@@ -50,7 +50,7 @@ def reranked_rag(client, encoder0, encoder1, collection0, collection1, message):
 demo0 = gr.Interface(fn=call_upload2qdrant, title="Upload URL content to Qdrant", inputs=gr.Textbox(label="URL(s)", info="Add one URL or more (if more, you should provide them comma-separated, like this: URL1,URL2,...,URLn)"), outputs=gr.Textbox(label="Logs"))
 
 def llama_cpp_respond(query, max_new_tokens, temperature, repeat_penalty, seed):
-    url = "http://localhost:8000/completion"
+    url = "http://host.docker.internal:8000/completion"
     headers = {
         "Content-Type": "application/json"
     }
@@ -65,6 +65,7 @@ def llama_cpp_respond(query, max_new_tokens, temperature, repeat_penalty, seed):
     response = requests.post(url, headers=headers, json=data)
 
     a = response.json()
+    print(a)
     return a["content"]
 
 

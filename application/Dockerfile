@@ -1,12 +1,10 @@
-FROM python:3.10.14-slim-bookworm
+FROM astrabert/local-search-application:latest
 
 WORKDIR /app
 
-ADD . /app/
+RUN mkdir -p /app/scripts
 
-RUN python3 -m pip cache purge
-RUN python3 -m pip install --no-cache-dir -r requirements.txt
-RUN python3 -m nltk.downloader all
+ADD ./scripts/*.py /app/scripts/
 
 EXPOSE 7860
 

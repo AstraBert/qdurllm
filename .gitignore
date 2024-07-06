@@ -1,2 +1,3 @@
 */.cache
 application/flagged
+qdrant_storage/
