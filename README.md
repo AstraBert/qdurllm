@@ -20,6 +20,10 @@
 
 This is provisioned through a multi-container Docker application, leveraging Qdrant, Langchain, llama.cpp, quantized Gemma and Gradio.
 
+## Demo!
+
+Head over to the [demo space on HuggingFace](https://huggingface.co/spaces/as-cle-bert/qdurllm-demo)🦀
+
 ## Requirements
 
 The only requirement is to have `docker` and `docker-compose`.
