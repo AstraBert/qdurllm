@@ -87,7 +87,7 @@ When launched (see [Usage](#usage)), the application runs three containers:
 - `local-search-application`(port 7860): a Gradio tabbed interface with:
     + The possibility to upload one or multiple contents by specifying the URL (thanks to Langchain)
     + The possibility to chat with the uploaded URLs thanks to `llama.cpp-gemma`
-    + The possibility to perform a direct search that leverages double-layered retrieval with `all-MiniLM-L6-v2` (that identifies the 10 best matches) and `sentence-t5-base` (that re-encodes the 10 best matches and extracts the best hit from them) - this is the same RAG implementation used in combination with `llama.cpp-gemma`.
+    + The possibility to perform a direct search that leverages double-layered retrieval with `all-MiniLM-L6-v2` (that identifies the 10 best matches) and `sentence-t5-base` (that re-encodes the 10 best matches and extracts the best hit from them) - this is the same RAG implementation used in combination with `llama.cpp-gemma`. Wanna see how double-layered RAG performs compared to single-layered RAG? Head over [here](./double-layered-rag-benchmarks/)!
 
 > _The overall computational burden is light enough to make the application run not only GPUless, but also with low RAM availability (>=8GB, although it can take up to 10 mins for Gemma to respond on 8GB RAM)._ 
 
