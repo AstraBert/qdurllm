@@ -3,24 +3,12 @@ networks:
     driver: bridge
 
 services:
-  local-search-application:
-    image: astrabert/local-search-application
-    networks:
-      - mynet
-    ports:
-      - "7860:7860"
   qdrant:
     image: qdrant/qdrant
     ports:
       - "6333:6333"
     volumes:
       - "./qdrant_storage:/qdrant/storage"
-    networks:
-      - mynet
-  llama_server:
-    image: astrabert/llama.cpp-gemma
-    ports:
-      - "8000:8000"
     networks:
       - mynet
   
